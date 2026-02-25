@@ -3,8 +3,6 @@
 **Computational Linear Algebra – Academic Year 2024–2025**  
 **Authors:** Ismail Aljosevic (s337769), Daniele Amato (s334211)
 
----
-
 ## 📌 Project Overview
 
 This project explores the application of **Singular Value Decomposition (SVD)** for RGB image compression.
@@ -15,9 +13,9 @@ We analyze how varying the number of singular values `k` affects:
 
 - Image reconstruction quality  
 - Energy retention  
-- Compression efficiency  
-
----
+- Compression efficiency
+  
+⚠️ **The complete implementation, experiments, visualizations, and results are entirely contained in `software.ipynb`.**
 
 ## 📚 Theoretical Background
 
@@ -48,7 +46,6 @@ $$
 
 Each triplet `(σᵢ, uᵢ, vᵢ)` represents a fundamental component (mode) of the matrix.
 
----
 
 ### 🔹 Low-Rank Approximation
 
@@ -62,7 +59,6 @@ This gives the **best rank-k approximation** in terms of reconstruction error.
 
 Most of the matrix energy is typically concentrated in the first few singular values, which enables compression.
 
----
 
 ## 🖼 Image Compression Strategy
 
@@ -83,7 +79,6 @@ Each channel is treated as an independent matrix.
 5. Reconstruct the image using only the first `k` singular values  
 6. Evaluate visual quality and cumulative energy  
 
----
 
 ## 📊 Experimental Results
 
@@ -108,7 +103,6 @@ Additional observations:
 - Retaining 99% of the energy offers an excellent trade-off between compression and image clarity.
 - Singular values decay rapidly at first, then gradually, with a sharper drop around k ≈ 500–600.
 
----
 
 ## 💾 Compression Insight
 
@@ -130,7 +124,6 @@ $$
 k(m + n + 1) < mn
 $$
 
----
 
 ## 🛠 Technologies Used
 
@@ -140,11 +133,6 @@ $$
 - Pillow  
 - Linear Algebra (SVD theory)
 
----
 
-## ▶️ How to Run
 
-### 1️⃣ Install dependencies
 
-```bash
-pip install numpy matplotlib pillow
