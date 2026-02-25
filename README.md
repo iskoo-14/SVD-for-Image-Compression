@@ -15,8 +15,12 @@ We analyze how varying the number of singular values `k` affects:
 - Energy retention  
 - Compression efficiency
   
-⚠️ **The complete implementation, experiments, visualizations, and results are entirely contained in `software.ipynb`.**
+## 📄 Project Files
 
+- `software.ipynb` – contains the complete implementation, experiments, and visualizations.
+- `report.pdf` – contains the full lab report, which can be read independently of the source code.
+
+  
 ## 📚 Theoretical Background
 
 ### 🔹 Singular Value Decomposition (SVD)
